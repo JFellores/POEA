@@ -1,0 +1,52 @@
+.oraa-card {
+    width: 500px;
+    min-height: 300px;
+    background-color: #3578e5;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    overflow: visible;
+    transition: filter 150ms ease-in-out;
+}
+
+.oraa-card:hover {
+    filter: brightness(1.1);
+}
+
+.oraa-card__icon-wrapper {
+    position: absolute;
+    top: -20px;
+    left: 70%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 400px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.oraa-card__icon-wrapper img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.oraa-card__title {
+    margin-top: 7rem;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 0.25rem;
+}
+
+.oraa-card__subtitle {
+    line-height: 2;
+    font-size: 1.2rem;
+    margin-top: 3px;
+    margin-left: 10px;
+}

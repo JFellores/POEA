@@ -1,0 +1,55 @@
+.ofw-card {
+    width: 500px;
+    min-height: 300px;
+    background-color: #3578e5;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    overflow: visible;
+    transition: filter 150ms ease-in-out;
+}
+
+.ofw-card:hover {
+  filter: brightness(1.1);
+}
+
+.ofw-card__icon-wrapper {
+  position: absolute;
+  top: 10px;
+  right: 18%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ofw-card__icon-wrapper img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.ofw-card__title {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 40px;
+  margin-left: 14rem;
+  margin-bottom: 0.25rem;
+}
+
+.ofw-card__subtitle {
+  margin: 0;               
+  margin-left: 15rem;     
+  margin-top: 0.05rem;     
+  font-size: 0.8rem;
+  line-height: 0.1;
+}
+

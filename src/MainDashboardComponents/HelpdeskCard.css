@@ -1,0 +1,36 @@
+.helpdesk-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* centers items horizontally */
+    gap: 1rem;                 /* optional spacing between text and icon */
+    text-align: center;
+    width: 94%;
+    max-width: 100%;
+    margin-left: 20px;
+    background-color: #3578e5;
+    border-radius: 30px;
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    transition: filter 150ms;
+}
+
+
+.helpdesk-card:hover {
+    filter: brightness(1.05);
+}
+
+.helpdesk-card__text {
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.helpdesk-card__icon img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+}

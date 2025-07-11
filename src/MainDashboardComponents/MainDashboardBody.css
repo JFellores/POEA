@@ -1,0 +1,82 @@
+.main-dashboard-body__image-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: visible;
+    margin-bottom: 300px;
+}
+
+.main-dashboard-body__image-container img {
+    margin-bottom: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.WhiteOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 45%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 0.5rem 1rem;
+}
+
+.overlay-text h1 {
+    font-size: 4rem;
+    line-height: 0.5;
+    margin: 0;
+}
+
+.overlay-text p {
+    font-size: 1.25rem;
+    text-align: left;
+    margin-left: 6px;
+    margin-top: 5px;
+}
+
+.main-dashboard-body__CardContainer {
+  position: absolute;   
+  top: 100%;          
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: calc(100% - 40px);  
+  padding: 0 20px;
+  z-index: 5;
+}
+
+.main-dashboard-body__CardContainer2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  margin-top: 50px;    
+  z-index: 5;
+  margin-bottom: 200px;
+}
+
+.main-dashboard-body__CardContainer3 {
+  width: 100%;
+  margin-bottom: 800px;
+}
