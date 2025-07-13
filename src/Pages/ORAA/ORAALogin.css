@@ -1,0 +1,146 @@
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.oraalogin-page {
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  min-height: 100vh;
+  background: #fff;
+  color: #333;
+}
+
+/* Banner + overlay stacking */
+.oraalogin__header {
+  position: relative;
+  overflow: visible;
+}
+
+/* Make the banner img fill width and auto-height */
+.oraalogin__banner {
+  width: 50%;      /* full width */
+  display: block;
+  margin-left: 50%;
+}
+
+.oraalogin__banner img {
+  width: 50%;
+  height: auto;     /* preserve aspect ratio */
+  display: block;   /* no inline gap */
+  object-fit: cover;/* optional: crop minimally to fill width */
+}
+.oraalogin__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Back + title row */
+.oraalogin__topbar {
+  /* tweak these values to match your header/nav heights */
+  top: 25px;
+  left: 2rem;           /* same side-padding as the rest of your page */
+  display: flex;
+  align-items: center;
+  margin-top: -300px;
+  margin-left: 1%;
+  gap: 1rem;
+  /* you can drop the normal padding now */
+  padding: 0;
+  background: rgba(255,255,255,0.8); /* optional backdrop */
+  z-index: 10;
+}
+
+.oraalogin__back {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.oraalogin__back img {
+  width: 42px;
+  height: 42px;
+}
+.oraalogin__title {
+  font-size: 2.6rem;
+  color: #F71B1B;
+  padding: 1%;
+  margin: 0;
+}
+
+.oraalogin__card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-start;
+
+  background-color: #3B82F6;
+  width: 40%;
+  height: 90px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+
+  /* shrink the left margin, grow the right */
+  margin: 2rem auto 5.5rem 3rem; /* top auto bottom auto */
+  /* or more explicitly: */
+  /* margin: 0 2rem 5.5rem auto; */
+
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+
+  padding-block: 1rem;
+  padding-inline: 2rem;
+}
+
+
+
+/* icon sizing and spacing */
+.oraalogin__card-icon {
+  width: 15 0px;    /* scale down to something reasonable */
+  height: 150px;
+  flex-shrink: 0; /* prevent the icon from shrinking */
+}
+
+
+/* Four action buttons */
+.oraalogin__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+.oraalogin__actions button {
+  flex: 1 1 180px;
+  padding: 1rem;
+  background-color: #FFEB3B;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+  transition: transform 0.1s;
+}
+.oraalogin__actions button:hover {
+  transform: translateY(-2px);
+}
+
+/* Floating Logout button */
+.oraalogin__logout {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #FFEB3B;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+}
+
+
