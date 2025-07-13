@@ -1,5 +1,5 @@
 .bm-card {
-    width: 500px;
+    width: 25vw;
     min-height: 300px;
     background-color: #3578e5;
     border-radius: 20px;
@@ -19,8 +19,8 @@
 
 .bm-card__icon-wrapper {
     position: absolute;
-    top: 60px;
-    right: 20%;
+    top:2vw;
+    left: 6vw;
     transform: translateX(-50%);
     width: 300px;
     height: 300px;
@@ -31,15 +31,15 @@
 }
 
 .bm-card__icon-wrapper img {
-    width: 400px;
-    height: 400px;
+    width: 18vw;
+    height: 18vw;
     object-fit: contain;
 }
 
 .bm-card__title {
-    margin-top: 8.4rem;
-    margin-left: 15rem;
-    font-size: 2.4rem;
+    margin-top: 7rem;
+    margin-left: 12vw;
+    font-size: 2vw;
     font-weight: 600;
     line-height: 40px;
     margin-bottom: 0.5rem;  /* small gap to subtitle */
@@ -47,7 +47,8 @@
 
 .bm-card__subtitle {
     margin: 0;               /* reset all margins */
-    margin-left: 17rem;      /* line it up with the title */
+    margin-left: 12vw;      /* line it up with the title */
     font-size: 0.9rem;
     line-height: 0.1;        /* normal line spacing */
 }
+
