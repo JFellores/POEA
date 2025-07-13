@@ -1,5 +1,5 @@
 .peos-card {
-    width: 500px;
+  width: 25vw;
   min-height: 300px;      /* ensures enough room for title/subtitle */
   background-color: #3578e5;
   border-radius: 20px;
@@ -20,27 +20,23 @@
 
 .peos-card__icon-wrapper {
   position: absolute;
-  top: -10px;       /* floats the 100×100 box halfway out of the card */
-  left: 58%;        /* center horizontally */
-  transform: translateX(-50%);
-  width: 300px;
-  height: 300px;
-  border-radius: 12px;
+  top: 1%;
+  bottom: 14%;
+  margin-left: 7vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .peos-card__icon-wrapper img {
-  width: 300px;
-  height: 300px;
+  width: 15vw;
   object-fit: contain;
 }
 
 .peos-card__title {
   /* push the title down below the icon */
   margin-top: 10rem;      
-  font-size: 3.5rem;
+  font-size: 3vw;
   font-weight: 600;
   margin-bottom: 0.25rem;
   text-align: left;
@@ -49,6 +45,6 @@
 .peos-card__subtitle {
   line-height: 0.1;
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1vw;
   margin: 0;
 }

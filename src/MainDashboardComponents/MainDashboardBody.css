@@ -40,13 +40,13 @@
 }
 
 .overlay-text h1 {
-    font-size: 4rem;
+    font-size: 3vw;
     line-height: 0.5;
     margin: 0;
 }
 
 .overlay-text p {
-    font-size: 1.25rem;
+    font-size: 1.25vw;
     text-align: left;
     margin-left: 6px;
     margin-top: 5px;

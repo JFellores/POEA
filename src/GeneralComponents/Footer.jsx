@@ -22,7 +22,7 @@ export default function Footer() {
       <div className="footer-col footer-col3">
         <h1>About GovPH</h1>
         <p>
-          Learn more about the Philippine government, its structure,<br />
+          Learn more about the Philippine government, its structure,
           how government works and the people behind it.
         </p>
         <ul>

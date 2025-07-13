@@ -24,13 +24,13 @@
 
 .helpdesk-card__text {
     align-items: center;
-    font-size: 3rem;
+    font-size: 2.2vw;
     font-weight: 600;
     white-space: nowrap;
 }
 
 .helpdesk-card__icon img {
-    width: 10rem;
-    height: 10rem;
+    width: 8vw;
+    height: 8vw;
     object-fit: contain;
 }
