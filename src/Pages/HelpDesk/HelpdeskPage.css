@@ -1,0 +1,121 @@
+/* HelpdeskPage.css */
+
+.helpdesk-page {
+    display: flex;
+    flex-direction: row;
+    
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Left column */
+.helpdesk-col1 {
+    padding: 2vw;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.helpdesk-col1 h1 {
+    font-size: 3rem;
+    line-height: 3vw;
+    margin-top: 4vw;
+    margin-left: 2vw;
+    margin-bottom: 4vw;
+    color: black;
+}
+
+.helpdesk-col1 p {
+    margin-left: 2vw;
+    font-size: 1.3vw;
+    color: #545F71;
+    line-height: 1.5;
+}
+
+.helpdesk-col1 p:first-of-type {
+    font-weight: bold;
+}
+.back-button {
+  border-radius: 90%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.back-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);   /* ← subtle gray hover */
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5vw;
+    margin-top: 5vw;
+}
+
+
+/* Button styles */
+.helpdesk-button {
+    display: inline-block;
+    background-color: #243753;
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    padding: 0.6rem 1.4rem;
+    font-size: 0.9rem;
+    margin-left: 4vw;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.helpdesk-button-below {
+    display: inline-block;
+    margin-left: 13vw;
+    background-color: #243753;
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    padding: 0.6rem 1.4rem;
+    font-size: 0.9rem;
+    margin-top: 2vw;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.helpdesk-button:hover {
+    background-color: #9BA5B7;
+}
+
+.helpdesk-button-below:hover {
+    background-color: #9BA5B7;
+}
+
+/* Right column */
+.helpdesk-col2 {
+    flex: 1;
+    max-width: 100%;
+    height: fit;
+    position: relative;
+    background-color: rgb(169, 170, 166);
+}
+
+.helpdesk-col2 img:first-child {
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: brightness(0.9);
+    /* to match the faded background look */
+}
+
+.helpdesk-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}

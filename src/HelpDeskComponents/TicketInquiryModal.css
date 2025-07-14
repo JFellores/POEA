@@ -1,0 +1,62 @@
+.ti-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.ti-modal {
+  background: #1f2a44;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.ti-title {
+  color: #fff;
+  font-size: 1.75rem;
+  margin: 0;
+}
+.ti-underline {
+  height: 3px;
+  width: 50%;
+  background: #fff;
+  margin: 0.5rem auto 1.5rem;
+}
+
+.ti-label {
+  color: #ccc;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+.ti-input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+.ti-input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+.ti-search-btn {
+  background: #fff;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.ti-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
