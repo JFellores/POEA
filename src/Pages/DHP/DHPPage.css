@@ -1,0 +1,122 @@
+/* src/Pages/DHPPage.css */
+.dhp-page {
+  font-family: Inter, sans-serif;
+  color: #fff;
+}
+
+.dhp-page__titlebar {
+  position: relative;       /* so the back‐button can be absolute */
+  background-color: #3B82F6;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+.dhp-page__titlebar h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* style the back-arrow */
+.dhp-page__back {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+/* layout */
+.dhp-page__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* login card */
+.dhp-page__form-card {
+  background-color: #1E293B;
+  flex: 1;
+  min-width: 300px;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+.dhp-page__field {
+  margin-bottom: 1.5rem;
+}
+.dhp-page__field label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+.dhp-page__field input {
+  width: 90%;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: #fff;
+}
+.dhp-page__password-wrapper {
+  position: relative;
+}
+.dhp-page__toggle-eye {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* login button */
+.dhp-page__login-btn {
+  display: block;
+  width: 30%;
+  margin: 1rem auto 0;   /* top, auto-sides, zero bottom */
+  padding: 0.75rem;
+  background-color: #fff;
+  color: #1E293B;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* aside */
+.dhp-page__aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  min-width: 200px;
+  color: #555;
+  font-size: 0.95rem;
+}
+.dhp-page__aside p {
+  margin-bottom: 1rem;
+}
+.dhp-page__register-btn {
+  background-color: #FFEB3B;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #1B293E;
+}
+.dhp-page__recover-link {
+  text-decoration: underline;
+  color: inherit;
+}

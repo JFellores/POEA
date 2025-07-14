@@ -20,11 +20,12 @@ export default function ORAALogin() {
       <div className="oraalogin__topbar">
         <button
           className="oraalogin__back"
-          onClick={() => navigate('/oraa')}
-          aria-label="Back to ORAA"
+          onClick={() => navigate(-1)}
+          aria-label="Back"
         >
           <img src={ArrowBack} alt="" />
         </button>
+
         <h2 className="oraalogin__title">
           Online Recruitment Authority Application
         </h2>
@@ -43,6 +44,10 @@ export default function ORAALogin() {
             />
             Requirements and Qualifications
     </div>
+
+    <h3 className="oraalogin__actions-title">
+      Select transaction:
+    </h3>
 
       {/* ─── Actions Grid ──────────────────────────────── */}
       <section className="oraalogin__actions">

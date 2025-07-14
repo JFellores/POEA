@@ -12,10 +12,11 @@ import PEOSPage         from './PEOSPage'
 import RegistrationPage from './RegistrationPage'
 import OFWPage          from './OFWPage'
 import BMPage           from './BMPage'
-import DHPPage          from './DHPPage'
+import DHPPage          from './DHP/DHPPage'
 import ORAAPage         from './ORAA/ORAAPage'
 import HelpdeskPage     from './HelpdeskPage'
 import ORAALogin from "./ORAA/ORAALogin";
+import DHPLoginPage       from './DHP/DHPLogin'
 
 import './MainDashboard.css'
 
@@ -32,6 +33,7 @@ export default function MainDashboard() {
           <Route path="/ofw"          element={<OFWPage />} />
           <Route path="/bm"           element={<BMPage />} />
           <Route path="/dhp"          element={<DHPPage />} />
+          <Route path="/dhp/login" element={<DHPLoginPage />} />
           <Route path="/oraa"         element={<ORAAPage />} />
           <Route path="/helpdesk"     element={<HelpdeskPage />} />
           <Route path="/oraalogin" element={<ORAALogin />} />

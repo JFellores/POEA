@@ -11,7 +11,7 @@
 .oraa-page__content {
   max-width: 1000px;
   margin: 0 auto;
-  padding-bottom: 4rem;
+  padding: 0 2rem 4rem;
 }
 
 .oraa-page__back {
@@ -24,17 +24,21 @@
 
 .oraa-page__title {
   color: #F71B1B;   /* red title */
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 0.5rem;
   margin-top: 2rem;
 }
 
+/* line the intro up under the title */
 .oraa-page__intro {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.6;
+  margin-top: 0;   /* no extra top gap */
   margin-bottom: 2rem;
-  margin-left: 3.8rem; 
+  /* shift it right so its left edge sits under the "O" */
+  margin-left: 0;
   max-width: 800px;
+  color: #545F71;
 }
 
 .oraa-page__form-layout {
@@ -46,11 +50,14 @@
 
 .oraa-page__form-card {
   background-color: #3B82F6;
-  padding: 2rem;
+  padding: 4rem;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
   min-width: 300px;
   flex: 1;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+
 }
 
 .oraa-page__field {
@@ -98,7 +105,7 @@
   min-width: 200px;
  font-weight: bold; 
  color: #3D3D3D60;
- margin-top: 4rem;
+ margin-top: 8rem;
 }
 
 .oraa-page__aside-line {
@@ -149,14 +156,16 @@
   pointer-events: none;  /* so clicks still hit the banner below */
 }
 
+/* ─── Header spans full width ─────────────────────── */
 .oraa-page__header {
   display: flex;
   align-items: center;
-  gap: 1rem;            /* space between arrow and title */
-  margin-bottom: 1rem;  /* space below header */
+  gap: 1rem;
+  padding: 1rem 2rem; /* gutter on both sides */
+  background: #fff;   /* match page bg or use transparent */
 }
 
-/* adjust back-button so it doesn’t push the title down */
+/* back button / arrow */
 .oraa-page__back {
   background: none;
   border: none;
@@ -164,11 +173,29 @@
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  margin-top: 2.5rem;            /* remove previous bottom margin */
 }
 
 .oraa-page__back-icon {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
+
+  /* instead of margin-top */
+  position: relative;
+  top: 6px; /* nudge it down 4px without changing container height */
+}
+
+/* title, no wrapping */
+.oraa-page__title {
+  color: #F71B1B;
+  font-size: 3rem;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* ─── Centered content wrapper ───────────────────── */
+.oraa-page__content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
 }
