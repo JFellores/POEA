@@ -1,0 +1,71 @@
+/* src/Pages/DHP/DHPLogin.css */
+
+.dhp-login-page {
+  font-family: Inter, sans-serif;
+  color: #333;
+  padding: 0; /* we handle spacing per‐section */
+}
+
+/* Full-width blue header */
+.dhp-login-page__titlebar {
+  background-color: #3B82F6;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  position: relative;
+}
+.dhp-login-page__titlebar h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Jobs section */
+.dhp-login-page__jobs-section {
+  max-width: 1200px;
+  margin: 2rem auto 4rem;
+  padding: 0 2rem;
+}
+.dhp-login-page__jobs-title {
+  color: #F71B1B;
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Search bar */
+.dhp-login-page__search {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.dhp-login-page__search input {
+  width: 600px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+    background-color: #fff;
+  color: #333;
+}
+.dhp-login-page__search button {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/* 2×2 grid of job cards */
+.dhp-login-page__jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-items: center;
+}
+.dhp-login-page__jobs-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  max-width: 500px;
+}

@@ -1,13 +1,14 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import './ORAAPage.css';
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import './ORAAPage.css'
 
-import Group25    from "../../assets/Group25.png";
-import Rectangle2 from "../../assets/Rectangle2.png";
-import ArrowBack  from "../../assets/arrow-circle-left.png";
+import Group25    from '../../assets/Group25.png'
+import Rectangle2 from '../../assets/Rectangle2.png'
+import ArrowBack  from '../../assets/arrow-circle-left.png'
 
 export default function ORAAPage() {
-    const navigate = useNavigate();
+  const navigate = useNavigate()
+
   return (
     <div className="oraa-page">
       {/* ─── Banner ───────────────────────────────────────── */}
@@ -25,33 +26,32 @@ export default function ORAAPage() {
         />
       </div>
 
-      {/* ─── Header (back + title) ───────────────────────── */}
-      <div className="oraa-page__content">
-        <div className="oraa-page__header">
-          <button
-            className="oraa-page__back"
-            onClick={() => navigate('/')}
-            aria-label="Go back"
-          >
-            <img
-              src={ArrowBack}
-              alt=""
-              className="oraa-page__back-icon"
-            />
-          </button>
-          <h1 className="oraa-page__title">
-            Online Recruitment Authority Application
-          </h1>
-        </div>
+      {/* ─── Full-Bleed Header: Back + Title ───────────────── */}
+      <header className="oraa-page__header">
+        <button
+          className="oraa-page__back"
+          onClick={() => navigate(-1)}
+          aria-label="Go back"
+        >
+          <img
+            src={ArrowBack}
+            alt="Back"
+            className="oraa-page__back-icon"
+          />
+        </button>
+        <h1 className="oraa-page__title">
+          Online Recruitment Authority Application
+        </h1>
+      </header>
 
-        {/* ─── Intro text ─────────────────────────────────── */}
+      {/* ─── Centered Page Content ─────────────────────────── */}
+      <div className="oraa-page__content">
         <p className="oraa-page__intro">
           The Online Recruitment Authority Application (ORAA) v.2 is an integrated system for
           filing of recruitment application for three types of Recruitment Authorities, such as:
           Special Recruitment Application (SRA), Letter of Authority (LOA), and combined SRA with LOA.
         </p>
 
-        {/* ─── Form + Aside ────────────────────────────────── */}
         <div className="oraa-page__form-layout">
           <div className="oraa-page__form-card">
             <div className="oraa-page__field">
@@ -70,16 +70,23 @@ export default function ORAAPage() {
                 placeholder="Input text"
               />
             </div>
-            <button className="oraa-page__login-btn"
-            onClick={() => navigate('/oraalogin')}>
+            <button
+              className="oraa-page__login-btn"
+              onClick={() => navigate('/oraalogin')}
+            >
               Login
             </button>
           </div>
 
-          <div className="oraa-page__aside">
+          <aside className="oraa-page__aside">
             <p className="oraa-page__aside-line">
               Don’t have an account?{' '}
-              <button className="oraa-page__register-btn">Register</button>
+              <button
+                className="oraa-page__register-btn"
+                onClick={() => navigate('/registration')}
+              >
+                Register
+              </button>
             </p>
             <p className="oraa-page__aside-line">
               Can’t remember your account details?{' '}
@@ -87,9 +94,9 @@ export default function ORAAPage() {
                 Recover account
               </a>
             </p>
-          </div>
+          </aside>
         </div>
       </div>
     </div>
-  );
+  )
 }
