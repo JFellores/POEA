@@ -1,6 +1,8 @@
 // src/Pages/DHPPage.jsx
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+
+import ArrowBack from '../../assets/arrow-circle-left.png';
 import './DHPPage.css'
 
 export default function DHPPage() {
@@ -10,13 +12,17 @@ export default function DHPPage() {
     <div className="dhp-page">
       {/* ─── Title Bar ───────────────────────── */}
       <div className="dhp-page__titlebar">
-               <button
-         className="dhp-page__back"
-         onClick={() => navigate(-1)}
-         aria-label="Go back"
-      >
-         ←
-       </button>
+        <button
+          className="dhp-page__back"
+          onClick={() => navigate(-1)}
+          aria-label="Go back"
+        >
+          <img
+            src={ArrowBack}
+            alt="Go back"
+            className="dhp-page__back-icon"
+          />
+        </button>
         <h1>Direct Hire Processing</h1>
       </div>
 
@@ -54,12 +60,13 @@ export default function DHPPage() {
               Register
             </button>
           </p>
-          <p>
+          <p className="dhp-page__recover">
             Can’t remember your account details?{' '}
             <a href="#" className="dhp-page__recover-link">
-              Recover account
+              Recover&nbsp;account
             </a>
           </p>
+
         </aside>
       </div>
     </div>

@@ -1,0 +1,44 @@
+/* src/Pages/ORAA/RequirementsModal.css */
+.req-modal__backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.req-modal__card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.req-modal__close {
+  position: absolute;
+  top: 0.5rem; right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.req-modal__card h2 {
+  color: #F71B1B;
+  margin-top: 0;
+}
+
+.req-modal__card ul {
+  margin: 0.5rem 0 1.5rem;
+  padding-left: 1.25rem;
+}
+
+.req-modal__card p {
+  margin: 0.5rem 0 1.5rem;
+  line-height: 1.5;
+}

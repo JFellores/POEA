@@ -1,9 +1,8 @@
-/* src/Pages/DHP/DHPLogin.css */
-
+/* Global page reset */
 .dhp-login-page {
   font-family: Inter, sans-serif;
   color: #333;
-  padding: 0; /* we handle spacing per‐section */
+  padding: 0; /* spacing handled per section */
 }
 
 /* Full-width blue header */
@@ -18,6 +17,24 @@
   margin: 0;
   font-size: 2rem;
   color: #fff;
+}
+
+/* Back button */
+.dhp-login-page__back {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.dhp-login-page__back-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin-left: 35rem;
 }
 
 /* Jobs section */
@@ -45,7 +62,7 @@
   padding: 0.5rem 1rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
-    background-color: #fff;
+  background-color: #fff;
   color: #333;
 }
 .dhp-login-page__search button {
@@ -64,8 +81,8 @@
 }
 .dhp-login-page__jobs-grid img {
   width: 100%;
+  max-width: 500px;
   height: auto;
   border-radius: 1rem;
   object-fit: cover;
-  max-width: 500px;
 }

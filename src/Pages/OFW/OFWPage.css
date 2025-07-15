@@ -1,0 +1,153 @@
+.ofw-page {
+  font-family: Inter, sans-serif;
+  color: #333;
+}
+
+/* ─── Title Bar ─────────────────────────────────── */
+.ofw-page__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f1f3a;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+.ofw-page__back {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-left: 10%;
+}
+.ofw-page__back img {
+  width: 48px;
+  height: 48px;
+}
+
+.ofw-page__titles {
+  text-align: center;
+}
+.ofw-page__titles h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 2rem;
+}
+.ofw-page__subtitle {
+  margin: 0;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* ─── Main two-column layout ────────────────────── */
+.ofw-page__main {
+  display: grid;
+  grid-template-columns: 360px 1fr; /* left fixed 360px, right auto */
+  gap: 2rem;                        /* space between card & reminders */
+  margin: 2rem auto;
+}
+
+/* ─── Blue card ─────────────────────────────────── */
+.ofw-page__card {
+  background: #3B82F6;
+  border-radius: 2rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #fff;
+  width: 360px;
+  justify-self: start; /* align top */
+  margin-left: 40%;
+  margin-bottom: 60%;
+  margin-top: 10%;
+}
+
+.ofw-page__card label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  width: 100%;
+}
+.ofw-page__card input {
+  margin-top: 0.25rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  width: 100%;
+  background: #fff;
+  color: #6c6969;
+  box-sizing: border-box;
+}
+.ofw-page__find-btn {
+  margin-top: 1rem;
+  align-self: center;
+  padding: 0.75rem 2rem;
+  background: #fff;
+  color: #3B82F6;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* ─── Reminders + divider ───────────────────────── */
+.ofw-page__reminders {
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  justify-self: start; /* align top */
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
+  width: 60%;
+  height: fit-content;
+  margin-bottom: 0%;
+  margin-top: 4%;
+}
+
+.ofw-page__reminders h2 {
+  margin-top: 0;
+}
+.ofw-page__reminders ol {
+  margin: 0.5rem 0 0 1.2rem;
+  padding: 0;
+}
+.ofw-page__reminders li {
+  margin-bottom: 0.5rem;
+}
+
+/* the divider as a <div> under the outline */
+.ofw-page__divider {
+  height: 1px;
+  background: #000;
+  width: 50%;        /* fill full width of reminders box */
+  margin-left: 44%;
+  margin-bottom: 2%;
+  margin-top: -25%;
+}
+
+/* ─── Calendar icon color ───────────────────────── */
+.ofw-page__card input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0%) sepia(0%) saturate(0%) brightness(0%) contrast(100%);
+}
+
+.ofw-page__notes {
+  max-width: calc(360px + 2rem + 1fr); /* optional: align under the second column */
+  margin: 1rem 0 2rem;                  /* space above/below */
+  padding-left: 2rem;                   /* indent to match page padding plus card width */
+  list-style: disc;
+  color: #333;
+  margin-left: 42%;
+  margin-bottom: 20%;
+}
+.ofw-page__notes li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}

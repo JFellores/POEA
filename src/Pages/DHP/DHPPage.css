@@ -31,6 +31,14 @@
   cursor: pointer;
 }
 
+.dhp-page__back-icon{
+
+width: 48px;
+  height: 48px;
+  display: block;
+  margin-left: 30rem;
+}
+
 
 /* layout */
 .dhp-page__content {
@@ -38,7 +46,8 @@
   flex-wrap: wrap;
   gap: 4rem;
   max-width: 1000px;
-  margin: 2rem auto;
+    margin-bottom: 10rem;
+    margin-left: 22rem;
   padding: 0 2rem;
 }
 
@@ -47,9 +56,10 @@
   background-color: #1E293B;
   flex: 1;
   min-width: 300px;
-  border-radius: 1rem;
-  padding: 2rem;
+  border-radius: 2rem;
+  padding: 5rem;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+  margin-top: 5rem;
 }
 .dhp-page__field {
   margin-bottom: 1.5rem;
@@ -119,4 +129,22 @@
 .dhp-page__recover-link {
   text-decoration: underline;
   color: inherit;
+}
+
+.dhp-page__recover {
+  white-space: nowrap;
+   font-weight: bold; 
+ color: #3D3D3D60;
+}
+
+.dhp-page__aside{
+
+      white-space: nowrap;
+   font-weight: bold; 
+ color: #3D3D3D60;
+}
+
+.dhp-page__recover-link{
+
+    color: #1E293B;
 }
