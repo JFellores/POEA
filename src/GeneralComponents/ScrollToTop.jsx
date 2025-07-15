@@ -1,13 +1,16 @@
-// src/components/ScrollToTop.jsx
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+// src/GeneralComponents/ScrollToTop.jsx
+import { useLayoutEffect } from 'react'
+import { useLocation }     from 'react-router-dom'
 
 export default function ScrollToTop() {
-  const { pathname } = useLocation();
+  const location = useLocation()
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+  useLayoutEffect(() => {
+    console.log('ScrollToTop fired for:', location.pathname)
+    window.scrollTo(0, 0)
+    const panel = document.querySelector('.app__content')
+    if (panel) panel.scrollTop = 0
+  }, [location.pathname])
 
-  return null;
+  return null
 }
