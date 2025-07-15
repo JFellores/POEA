@@ -16,6 +16,7 @@ import DHPPage          from '../DHPPage'
 import ORAAPage         from '../ORAA/ORAAPage'
 import HelpdeskPage     from '../HelpDesk/HelpdeskPage'
 import ORAALogin from "../ORAA/ORAALogin";
+import Transfer from "../HelpDesk/Transfer";
 
 import './MainDashboard.css'
 
@@ -34,6 +35,7 @@ export default function MainDashboard() {
           <Route path="/oraa"         element={<ORAAPage />} />
           <Route path="/helpdesk"     element={<HelpdeskPage />} />
           <Route path="/oraalogin" element={<ORAALogin />} />
+          <Route path="/transfer" element={<Transfer />} />
         </Routes>
       </main>
 
