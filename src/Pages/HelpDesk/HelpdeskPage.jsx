@@ -16,17 +16,17 @@ export default function HelpdeskPage() {
   return (
     <div className="helpdesk-page">
       <div className="helpdesk-col1">
-        <button
-          className="back-button"
-          onClick={() => navigate('/')}
-          aria-label="Go back"
-        >
-          <img
-            src={ArrowButton}
-            alt="Go back"
-            className="back-button__icon"
-          />
-        </button>
+          <button
+            className="back-button"
+            onClick={() => navigate('/')}
+            aria-label="Go back"
+          >
+            <img
+              src={ArrowButton}
+              alt="Go back"
+              className="back-button__icon"
+            />
+          </button>
 
         <h1>Help Desk <br /> Support</h1>
 
@@ -54,7 +54,7 @@ export default function HelpdeskPage() {
           </button>
         </div>
 
-        <button className="helpdesk-button-below">
+        <button className="helpdesk-button-below" onClick={() => navigate('/transfer')}>
           Transfer Old BM Records
         </button>
       </div>

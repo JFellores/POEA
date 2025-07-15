@@ -1,0 +1,187 @@
+.transfer-page {
+
+    height: 60vw;
+}
+
+.lower-header {
+    display: flex;
+    width: 100%;
+    height: 7vw;
+    background-color: #1B293E;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.1vw;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container h1 {
+    margin-right: 9.4vw;
+    color: white;
+    font-size: 2vw;
+    margin-bottom: 0.2vw;
+}
+
+.title-container p {
+    margin-right: 9.4vw;
+    margin-top: 0.1vw;
+}
+
+.button-container {
+    display: flex;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.back-button {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.back-button__icon:hover {
+    background-color: #c4bbbb;
+    border-radius: 50%;
+    width: 4vw;
+}
+
+
+
+
+/* Transfer.css */
+
+/* ---------- two‑column wrapper ---------- */
+.lower-body {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+    /* space between columns */
+    box-sizing: border-box;
+}
+
+/* ---------- left form card ---------- */
+.left-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* give the heading some breathing room */
+.left-column h1 {
+    margin-bottom: 4vw;
+    font-size: 1.8vw;
+    text-align: center;
+    color: #000;
+}
+
+.form-card {
+    background-color: #3578e5;
+    /* your blue */
+    padding: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 1vw;
+    max-width: 30rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-card label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+.form-card input[type="text"],
+.form-card input[type="date"] {
+    margin-top: 0.3rem;
+    padding: 0.6rem 0.8rem;
+    background-color: white;
+    color: #000;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 1rem;
+    top: 2.4rem;
+    cursor: pointer;
+}
+
+.find-button {
+    align-self: flex-end;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 0.4rem;
+    background: white;
+    color: #3578e5;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.find-button:hover {
+    background: #86a9e2;
+    /* your blue */
+    color: white;
+}
+
+
+
+
+/* ---------- right reminders panel ---------- */
+.right-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-column h2 {
+    margin-top: 1px;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.reminders-box {
+    border: 2px solid #000;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.reminders-box ol {
+
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.notes-list {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+.notes-list li {
+    margin-bottom: 0.5rem;
+}
+
+.reminders-box,
+.notes-list,
+.notes-list li {
+    color: black;
+}

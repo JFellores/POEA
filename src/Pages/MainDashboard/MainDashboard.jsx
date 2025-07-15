@@ -8,15 +8,28 @@ import Footer    from '../../GeneralComponents/Footer'
 import MainDashboardBody from '../../MainDashboardComponents/MainDashboardBody'
 
 // Individual pages
+<<<<<<< HEAD
 import PEOSPage         from '../PEOSPage'
+=======
+import PEOSPage from "../PEOSPage";
+>>>>>>> c47bd419e82c063b4decb4b5af662cde6da41b56
 import RegistrationPage from '../RegistrationPage'
 import OFWPage          from '../OFW/OFWPage'
 import BMPage           from '../BMPage'
 import DHPPage          from '../DHP/DHPPage'
+<<<<<<< HEAD
 import DHPLoginPage     from '../DHP/DHPLogin'
+=======
+>>>>>>> c47bd419e82c063b4decb4b5af662cde6da41b56
 import ORAAPage         from '../ORAA/ORAAPage'
 import ORAALogin        from '../ORAA/ORAALogin'
 import HelpdeskPage     from '../HelpDesk/HelpdeskPage'
+<<<<<<< HEAD
+=======
+import ORAALogin from "../ORAA/ORAALogin";
+import DHPLoginPage       from '../DHP/DHPLogin'
+import Transfer from "../HelpDesk/Transfer";
+>>>>>>> c47bd419e82c063b4decb4b5af662cde6da41b56
 
 import './MainDashboard.css'
 
@@ -36,6 +49,11 @@ export default function MainDashboard() {
           <Route path="/oraa"         element={<ORAAPage />} />
           <Route path="/oraalogin"    element={<ORAALogin />} />
           <Route path="/helpdesk"     element={<HelpdeskPage />} />
+<<<<<<< HEAD
+=======
+          <Route path="/oraalogin" element={<ORAALogin />} />
+          <Route path="/transfer" element={<Transfer />} />
+>>>>>>> c47bd419e82c063b4decb4b5af662cde6da41b56
         </Routes>
       </main>
       <Footer />
