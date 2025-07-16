@@ -8,7 +8,7 @@ import ScrollToTop   from './GeneralComponents/ScrollToTop.jsx'
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <MainDashboard />
     </BrowserRouter>
   </React.StrictMode>

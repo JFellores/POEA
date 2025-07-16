@@ -23,7 +23,15 @@ body {
   flex: 1;               /* fill all available space */
 }
 
-/* your main content area */
+
+/* Add to MainDashboard.css */
 .app__content {
-  flex: 1;               /* push footer to the bottom */
+  flex: 1;
+  overflow-y: auto; /* Ensure this is the scrolling container */
+  position: relative;
+}
+
+/* Ensure child pages don't interfere with scrolling */
+.app__content > * {
+  position: relative;
 }
