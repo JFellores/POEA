@@ -1,0 +1,68 @@
+.create-ticket-page-main{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: aqua;
+    height: 60vw;
+}
+
+
+/*     --LEFT COLUMN--       */
+.left-column-1 {
+    width: 30%;
+    background-color: #2E3094;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Button-Container {
+    width: 100%;
+}
+
+.Picture-Container {
+    width: 100%;
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Picture-Container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/*     --RIGHT COLUMN--       */
+
+.right-column-1 {
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Title-Container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Title-Container h1{
+   font-size: 4.5vw;
+   color: black;
+   line-height: 4vw;
+   margin: 5vw 0 5vw 10vw;
+}
+
+.Process-Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}

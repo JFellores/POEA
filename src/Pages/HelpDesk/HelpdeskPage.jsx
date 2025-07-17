@@ -39,7 +39,7 @@ export default function HelpdeskPage() {
         <div className="button-group">
           <button
             className="helpdesk-button"
-            onClick={() => alert('Create Ticket clicked!')}
+             onClick={() => navigate('/create-ticket')}
           >
             Create Ticket
           </button>
