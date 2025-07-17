@@ -11,7 +11,7 @@ import MainDashboardBody from '../../MainDashboardComponents/MainDashboardBody';
 
 // Individual pages
 import PEOSPage         from '../PEOSPage';
-import RegistrationPage from '../RegistrationPage';
+import RegistrationPage from '../Registration/RegistrationPage';
 import OFWPage          from '../OFW/OFWPage';
 import BMPage           from '../BMPage';
 import DHPPage          from '../DHP/DHPPage';
@@ -20,6 +20,7 @@ import ORAAPage         from '../ORAA/ORAAPage';
 import ORAALogin        from '../ORAA/ORAALogin';
 import HelpdeskPage     from '../HelpDesk/HelpdeskPage';
 import Transfer         from '../HelpDesk/Transfer';
+import NewAccount       from '../Registration/NewAccount'
 
 import './MainDashboard.css';
 
@@ -41,6 +42,7 @@ export default function MainDashboard() {
           <Route path="/oraalogin"    element={<ORAALogin />} />
           <Route path="/helpdesk"     element={<HelpdeskPage />} />
           <Route path="/transfer"     element={<Transfer />} />
+          <Route path="/registration/new" element={<NewAccount/>}/>
         </Routes>
       </main>
       <Footer />

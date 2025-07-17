@@ -1,0 +1,141 @@
+/* container: two‑column */
+.newacct-page {
+  display: flex;
+  gap: 0rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* ─── Left notices ───────────────────────── */
+.newacct-notices {
+  flex: 1 1 35%;
+  
+}
+.newacct-notices .notice {
+  margin-bottom: 1.5rem;
+  margin-left: 3.5rem;
+}
+.newacct-notices h2 {
+  margin: 0 0 0.5rem;
+  color: #f71b1b;
+  font-size: 3.25rem;
+}
+.newacct-notices ol {
+    width: 100%;
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #333;
+  line-height: 1.5;
+  margin-left: 6rem;
+}
+.newacct-notices p {
+  margin: 0;
+  color: #333;
+  line-height: 1.8;
+    margin-left: 3.5rem;
+        width: 100%;
+          text-align: left;
+
+
+
+}
+
+/* horizontal rule */
+.newacct-notices hr {
+    width: 100%;
+  border: none;
+  border-top: 1px solid #000;
+margin-left: 20%;
+}
+
+/* ─── Right form card ───────────────────── */
+.newacct-form {
+    margin-left: 30%;
+    margin-right: 40%;
+    margin-bottom: 30%;
+  flex: 2;
+  background: #ffeb3b;
+  padding: 5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+.newacct-form__title {
+  margin: 0 0 0.25rem;
+  color: #000;
+  font-size: 3.75rem;
+}
+.newacct-form__subtitle {
+  margin: 0 0 1.5rem;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* each full‑width row */
+.newacct-form__row {
+  margin-bottom: 2.5rem;
+}
+.newacct-form__row label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  color: #000;
+}
+.newacct-form__row input {
+  width: 95%;
+  height: 2rem;
+  margin-top: 0.25rem;
+  padding: 0.6rem 0.8rem;
+  border: none;
+  border-radius: 0.4rem;
+  background: white;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* two‑column row */
+.newacct-form__grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.newacct-form__grid2 label {
+  font-size: 1.25rem;
+  color: #000;
+}
+.newacct-form__grid2 input {
+  margin-top: 0.25rem;
+    height: 2rem;
+
+  padding: 0.6rem 0.8rem;
+  border: none;
+  border-radius: 0.4rem;
+  background: white;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* submit */
+.newacct-form__submit {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 0.75rem 2rem;
+  background: #1e293b;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+}
+.newacct-form__submit:hover {
+  transform: translateY(-2px);
+  transition: transform 0.1s;
+}
+
+/* make the date‐picker icon black */
+.newacct-form input[type="date"]::-webkit-calendar-picker-indicator {
+  /* zero out any color, then force full black */
+  filter: brightness(0) saturate(100%);
+}
+
