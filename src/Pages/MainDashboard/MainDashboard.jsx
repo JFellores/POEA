@@ -20,6 +20,9 @@ import ORAAPage         from '../ORAA/ORAAPage';
 import ORAALogin        from '../ORAA/ORAALogin';
 import HelpdeskPage     from '../HelpDesk/HelpdeskPage';
 import Transfer         from '../HelpDesk/Transfer';
+import CreateTicketPage from "../HelpDesk/CreateTicketPage.jsx";
+
+
 
 import './MainDashboard.css';
 
@@ -41,6 +44,7 @@ export default function MainDashboard() {
           <Route path="/oraalogin"    element={<ORAALogin />} />
           <Route path="/helpdesk"     element={<HelpdeskPage />} />
           <Route path="/transfer"     element={<Transfer />} />
+          <Route path="/create-ticket" element={<CreateTicketPage />} />
         </Routes>
       </main>
       <Footer />

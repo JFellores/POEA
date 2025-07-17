@@ -1,0 +1,85 @@
+.startcreate-main {
+    width: 100%;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.startcreate-main h1{
+    width: 50;
+    color: #545F71;
+    display: flex;
+    margin-left: 3vw;
+}
+
+.process-image img {
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* container that controls width + left padding */
+.faq-container {
+  margin-top: 2vw;
+  width: 100%;
+  max-width: 900px;
+  margin-left: 5vw;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* 2‑column layout for the top‑level FAQ items */
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 2.5rem 18rem;            /* row / col gaps */
+  margin: 0;
+  padding-left: 1.25rem;       /* space for outer bullets */
+  list-style: disc;
+  color: #545F71;
+}
+
+/* top‑level li (the question cluster) */
+.faq-grid > li {
+  margin: 0;
+  padding: 0;
+}
+
+/* the question text */
+.faq-grid > li > strong {
+  color: #545F71;
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+/* nested answer list */
+.faq-answers {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+  font-size: 1vw;
+  font-weight: 400;
+  color: #545F71;
+}
+
+
+
+
+.next-button {
+  background-color: #1B293E;
+  color: #ffffff;
+  font-weight: bolder;
+  border: none;
+  width: 10vw;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease; /* smooth hover */
+}
+
+.next-button:hover {
+  background-color: #2C3F5C; /* lighter navy */
+}
