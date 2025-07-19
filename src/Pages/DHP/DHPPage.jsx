@@ -55,7 +55,7 @@ export default function DHPPage() {
             Don’t have an account?{' '}
             <button
               className="dhp-page__register-btn"
-              onClick={() => navigate('/registration')}
+              onClick={() => navigate('/registration/new')}
             >
               Register
             </button>

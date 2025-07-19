@@ -159,9 +159,13 @@
 
 .navbar__link:hover,
 .nav__toggle:hover {
-  background-color: #fff;
-  color: #1765d1;
+  background-color: #DCE0E7;       /* background turns white */
+  color: #1765d1;               /* text turns blue */
+  border-radius: 1rem;          /* adds the rounded "pill" effect */
+  transition: background-color 0.2s, color 0.2s, border-radius 0.2s;
+
 }
+
 
 @media (max-width: 992px) {
   .navbar__link {

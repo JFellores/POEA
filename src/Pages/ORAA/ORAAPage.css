@@ -199,3 +199,11 @@
   margin: 0 auto;
   padding: 0 2rem 4rem;
 }
+
+.oraa-page__login-btn:hover{
+  background-color: #b8b3b3;
+}
+
+.oraa-page__register-btn:hover{
+  background-color: #b8b3b3;
+}

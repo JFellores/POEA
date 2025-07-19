@@ -14,8 +14,9 @@
 }
 
 .bm-card:hover {
-    filter: brightness(1.1);
+    background-color: #1B293E;
 }
+
 
 .bm-card__icon-wrapper {
     position: absolute;

@@ -1,0 +1,51 @@
+/* src/Pages/Registration/LoginPage.css */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: #f7f8fa;
+}
+
+.profile-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 320px;
+}
+
+.avatar {
+  margin: 0 auto 1rem;
+}
+
+.name {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.info p {
+  margin: 0.3rem 0;
+  color: #555;
+}
+
+.btn-logout {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background: #e53e3e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-logout:hover {
+  background: #c53030;
+}
+
+.error {
+  color: #e53e3e;
+  text-align: center;
+}

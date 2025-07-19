@@ -21,6 +21,9 @@ import ORAALogin        from '../ORAA/ORAALogin';
 import HelpdeskPage     from '../HelpDesk/HelpdeskPage';
 import Transfer         from '../HelpDesk/Transfer';
 import NewAccount       from '../Registration/NewAccount';
+import LoginPage       from '../Registration/LoginPage';
+import ResetPassword       from '../Registration/ResetPassword';
+
 import CreateTicketPage from "../HelpDesk/CreateTicketPage.jsx";
 
 import './MainDashboard.css';
@@ -45,6 +48,10 @@ export default function MainDashboard() {
           <Route path="/transfer"         element={<Transfer />} />
           <Route path="/registration/new" element={<NewAccount />} />
           <Route path="/create-ticket"    element={<CreateTicketPage />} />
+          <Route path="/login"            element={<LoginPage />} />
+          <Route path="/reset-password"   element={<ResetPassword />} />
+
+
         </Routes>
       </main>
       <Footer />

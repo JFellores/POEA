@@ -14,7 +14,7 @@
 }
 
 .dhp-card:hover {
-  filter: brightness(1.1);
+    background-color: #1B293E;
 }
 
 .dhp-card__icon-wrapper {

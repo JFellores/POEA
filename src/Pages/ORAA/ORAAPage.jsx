@@ -83,7 +83,7 @@ export default function ORAAPage() {
               Don’t have an account?{' '}
               <button
                 className="oraa-page__register-btn"
-                onClick={() => navigate('/registration')}
+                onClick={() => navigate('/registration/new')}
               >
                 Register
               </button>

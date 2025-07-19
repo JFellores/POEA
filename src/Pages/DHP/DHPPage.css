@@ -18,26 +18,42 @@
   color: #fff;
 }
 
-/* style the back-arrow */
 .dhp-page__back {
   position: absolute;
   left: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
+  top: 1rem; /* set a consistent vertical offset manually */
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
   border: none;
-  color: #fff;
-  font-size: 1.5rem;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  margin-left: 33%;
+  margin-top: 0.25%;
 }
 
-.dhp-page__back-icon{
 
-width: 48px;
-  height: 48px;
-  display: block;
-  margin-left: 30rem;
+.dhp-page__back-icon {
+  width: 3rem;
+  height: 3rem;
+  transition: filter 0.2s;
+  filter: invert(0%) brightness(100%); /* icon appears black initially */
 }
+
+.dhp-page__back:hover {
+  background-color: #1B293E;
+  transform: scale(1.05);
+}
+
+.dhp-page__back:hover .dhp-page__back-icon {
+  filter: invert(100%) brightness(100%); /* icon turns white */
+}
+
 
 
 /* layout */
@@ -104,6 +120,10 @@ width: 48px;
   font-weight: bold;
 }
 
+.dhp-page__login-btn:hover{
+  background-color: #FFE500;
+}
+
 /* aside */
 .dhp-page__aside {
   display: flex;
@@ -125,7 +145,13 @@ width: 48px;
   cursor: pointer;
   font-weight: bold;
   color: #1B293E;
+  width: 40%;
 }
+
+.dhp-page__register-btn:hover{
+  background-color: #a19f9f;
+}
+
 .dhp-page__recover-link {
   text-decoration: underline;
   color: inherit;

@@ -15,7 +15,7 @@
 
 
 .peos-card:hover {
-  filter: brightness(1.1);
+    background-color: #1B293E;
 }
 
 .peos-card__icon-wrapper {

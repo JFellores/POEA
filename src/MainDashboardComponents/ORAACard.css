@@ -14,7 +14,7 @@
 }
 
 .oraa-card:hover {
-    filter: brightness(1.1);
+    background-color: #1B293E;
 }
 
 .oraa-card__icon-wrapper {

@@ -36,17 +36,14 @@ export default function OFWPage() {
                             <label>
                                 First Name
                                 <input type="text" placeholder="Input text" />
-                                <span className="eye-icon">👁️</span>
                             </label>
                             <label>
                                 Middle Name
                                 <input type="text" placeholder="Input text" />
-                                <span className="eye-icon">👁️</span>
                             </label>
                             <label>
                                 Last Name
                                 <input type="text" placeholder="Input text" />
-                                <span className="eye-icon">👁️</span>
                             </label>
                             <label>
                                 Birth Date
