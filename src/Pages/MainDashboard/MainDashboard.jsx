@@ -10,7 +10,7 @@ import Footer    from '../../GeneralComponents/Footer';
 import MainDashboardBody from '../../MainDashboardComponents/MainDashboardBody';
 
 // Individual pages
-import PEOSPage         from '../PEOSPage';
+import PEOSPage         from '../PEOS/PEOSPage';
 import RegistrationPage from '../Registration/RegistrationPage';
 import OFWPage          from '../OFW/OFWPage';
 import BMPage           from '../BMPage';
