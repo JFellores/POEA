@@ -1,17 +1,45 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useState } from 'react'
+import { useNavigate }     from 'react-router-dom'
+import { supabase }        from '../../supabaseClient'
+import Group25             from '../../assets/Group25.png'
+import Rectangle2          from '../../assets/Rectangle2.png'
+import ArrowBack           from '../../assets/arrow-circle-left.png'
 import './ORAAPage.css'
-
-import Group25    from '../../assets/Group25.png'
-import Rectangle2 from '../../assets/Rectangle2.png'
-import ArrowBack  from '../../assets/arrow-circle-left.png'
 
 export default function ORAAPage() {
   const navigate = useNavigate()
 
+  // form state
+  const [form, setForm]       = useState({ email: '', password: '' })
+  const [loading, setLoading] = useState(false)
+  const [error, setError]     = useState(null)
+
+  const handleChange = e => {
+    const { name, value } = e.target
+    setForm(f => ({ ...f, [name]: value }))
+  }
+
+  const handleLogin = async () => {
+    setLoading(true)
+    setError(null)
+
+    const { error: signInError } = await supabase.auth.signInWithPassword({
+      email:    form.email,
+      password: form.password,
+    })
+
+    setLoading(false)
+
+    if (signInError) {
+      setError(signInError.message)
+    } else {
+      navigate('/oraalogin')
+    }
+  }
+
   return (
     <div className="oraa-page">
-      {/* ─── Banner ───────────────────────────────────────── */}
+      {/* ─── Banner ─────────────────────────── */}
       <div className="oraa-banner">
         <img
           className="oraa-banner__img"
@@ -26,7 +54,7 @@ export default function ORAAPage() {
         />
       </div>
 
-      {/* ─── Full-Bleed Header: Back + Title ───────────────── */}
+      {/* ─── Header ─────────────────────────── */}
       <header className="oraa-page__header">
         <button
           className="oraa-page__back"
@@ -44,7 +72,7 @@ export default function ORAAPage() {
         </h1>
       </header>
 
-      {/* ─── Centered Page Content ─────────────────────────── */}
+      {/* ─── Content ────────────────────────── */}
       <div className="oraa-page__content">
         <p className="oraa-page__intro">
           The Online Recruitment Authority Application (ORAA) v.2 is an integrated system for
@@ -54,27 +82,38 @@ export default function ORAAPage() {
 
         <div className="oraa-page__form-layout">
           <div className="oraa-page__form-card">
+            {error && <div className="oraa-page__error">{error}</div>}
+
             <div className="oraa-page__field">
               <label className="oraa-page__label">Enter Username</label>
               <input
+                name="email"
                 className="oraa-page__input"
-                type="text"
-                placeholder="Input text"
+                type="email"
+                placeholder="you@example.com"
+                value={form.email}
+                onChange={handleChange}
               />
             </div>
+
             <div className="oraa-page__field">
               <label className="oraa-page__label">Enter Password</label>
               <input
+                name="password"
                 className="oraa-page__input"
                 type="password"
-                placeholder="Input text"
+                placeholder="••••••••"
+                value={form.password}
+                onChange={handleChange}
               />
             </div>
+
             <button
               className="oraa-page__login-btn"
-              onClick={() => navigate('/oraalogin')}
+              onClick={handleLogin}
+              disabled={loading}
             >
-              Login
+              {loading ? 'Logging in…' : 'Login'}
             </button>
           </div>
 
@@ -90,9 +129,12 @@ export default function ORAAPage() {
             </p>
             <p className="oraa-page__aside-line">
               Can’t remember your account details?{' '}
-              <a href="#" className="oraa-page__recover-link">
+              <button
+                className="oraa-page__recover-btn"
+                onClick={() => navigate('/registration')}
+              >
                 Recover account
-              </a>
+              </button>
             </p>
           </aside>
         </div>
