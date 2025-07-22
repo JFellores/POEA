@@ -41,7 +41,7 @@ export default function MainDashboardBody() {
       </div>
 
       <div className="main-dashboard-body__CardContainer2">
-        <BMCard   onClick={() => navigate('/bm')} />
+        <BMCard   onClick={() => navigate('/registration')} />
         <DHPCard  onClick={() => navigate('/dhp')} />
         <ORAACard onClick={() => navigate('/oraa')} />
       </div>

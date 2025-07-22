@@ -13,7 +13,7 @@ import MainDashboardBody from '../../MainDashboardComponents/MainDashboardBody';
 import PEOSPage         from '../PEOS/PEOSPage';
 import RegistrationPage from '../Registration/RegistrationPage';
 import OFWPage          from '../OFW/OFWPage';
-import BMPage           from '../BMPage';
+import BMPage from '../BM/BMPage';
 import DHPPage          from '../DHP/DHPPage';
 import DHPLoginPage     from '../DHP/DHPLogin';
 import ORAAPage         from '../ORAA/ORAAPage';
