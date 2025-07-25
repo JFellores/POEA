@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './DHPLogin.css';
 
-import ArrowBack from '../../assets/arrow-circle-left.png';  // new import
+import ArrowBack from '../../assets/arrow-circle-left.png';
 import Job1      from '../../assets/image14.png';
 import Job2      from '../../assets/image15.png';
 import Job3      from '../../assets/image16.png';
@@ -32,7 +32,7 @@ export default function DHPLogin() {
       {/* ─── Foreign Job Listings ───────────────── */}
       <section className="dhp-login-page__jobs-section">
         <h2 className="dhp-login-page__jobs-title">
-          Foreign Job listings
+          Foreign Job Listings
         </h2>
 
         <div className="dhp-login-page__search">
@@ -51,5 +51,5 @@ export default function DHPLogin() {
         </div>
       </section>
     </div>
-  );
+);
 }

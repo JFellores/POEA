@@ -2,7 +2,7 @@
 .dhp-login-page {
   font-family: Inter, sans-serif;
   color: #333;
-  padding: 0; /* spacing handled per section */
+  padding: 0;
 }
 
 /* Full-width blue header */
@@ -13,13 +13,14 @@
   margin-top: 1rem;
   position: relative;
 }
+
 .dhp-login-page__titlebar h1 {
   margin: 0;
   font-size: 2rem;
   color: #fff;
 }
 
-/* Back button */
+/* Back button flush left */
 .dhp-login-page__back {
   position: absolute;
   left: 1rem;
@@ -29,12 +30,13 @@
   border: none;
   padding: 0;
   cursor: pointer;
+  margin-left: 30%;
 }
+
 .dhp-login-page__back-icon {
   width: 48px;
   height: 48px;
   display: block;
-  margin-left: 35rem;
 }
 
 /* Jobs section */
@@ -43,6 +45,7 @@
   margin: 2rem auto 4rem;
   padding: 0 2rem;
 }
+
 .dhp-login-page__jobs-title {
   color: #F71B1B;
   font-size: 2.75rem;
@@ -57,6 +60,7 @@
   gap: 0.5rem;
   margin-bottom: 2rem;
 }
+
 .dhp-login-page__search input {
   width: 600px;
   padding: 0.5rem 1rem;
@@ -65,6 +69,7 @@
   background-color: #fff;
   color: #333;
 }
+
 .dhp-login-page__search button {
   background: none;
   border: none;
@@ -79,6 +84,7 @@
   gap: 1rem;
   justify-items: center;
 }
+
 .dhp-login-page__jobs-grid img {
   width: 100%;
   max-width: 500px;
